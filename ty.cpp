@@ -6,7 +6,7 @@
 
 using namespace std;
 
-struct Node{
+struct Node{  //struct Node
 	int value;
 	Node *left;
 	Node *right;
@@ -50,9 +50,9 @@ int main(){
 	for(int i = 0;i < 10;i++){
 		insertTree(&root,rand() % 50 - 25);
 	}
-	cout << "Åëåìåíòè äåðåâà: " << endl;	
+	cout << "Ã…Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã¨ Ã¤Ã¥Ã°Ã¥Ã¢Ã : " << endl;	
 	printTree(root);
-	cout << endl << endl << "Ãëèáèíà äåðåâà  = " << getDepth(root,0) << endl;
+	cout << endl << endl << "ÃƒÃ«Ã¨Ã¡Ã¨Ã­Ã  Ã¤Ã¥Ã°Ã¥Ã¢Ã   = " << getDepth(root,0) << endl;
 	cout << endl;
 	system("pause");
 }
